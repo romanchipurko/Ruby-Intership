@@ -3,7 +3,7 @@
 require 'httparty'
 
 module Scraper
-  class HttpCliennt
+  class HttpClient
     include HTTParty
 
     default_timeout 20

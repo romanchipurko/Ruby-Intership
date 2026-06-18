@@ -15,7 +15,7 @@ module Scraper
     end
 
     def call
-      client = HttpCliennt.new
+      client = HttpClient.new
       scrape_links(client)
       scraper_products(client)
       collect_result

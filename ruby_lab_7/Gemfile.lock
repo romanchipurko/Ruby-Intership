@@ -1,8 +1,15 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    addressable (2.9.0)
+      public_suffix (>= 2.0.2, < 8.0)
     bigdecimal (3.3.1)
+    crack (1.0.1)
+      bigdecimal
+      rexml
     csv (3.3.5)
+    diff-lcs (1.6.2)
+    hashdiff (1.2.1)
     httparty (0.24.2)
       csv
       mini_mime (>= 1.0.0)
@@ -13,7 +20,26 @@ GEM
       bigdecimal (>= 3.1, < 5)
     nokogiri (1.18.10-x86_64-linux-gnu)
       racc (~> 1.4)
+    public_suffix (7.0.5)
     racc (1.8.1)
+    rexml (3.4.4)
+    rspec (3.13.2)
+      rspec-core (~> 3.13.0)
+      rspec-expectations (~> 3.13.0)
+      rspec-mocks (~> 3.13.0)
+    rspec-core (3.13.6)
+      rspec-support (~> 3.13.0)
+    rspec-expectations (3.13.5)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.13.0)
+    rspec-mocks (3.13.8)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.13.0)
+    rspec-support (3.13.7)
+    webmock (3.26.2)
+      addressable (>= 2.8.0)
+      crack (>= 0.3.2)
+      hashdiff (>= 0.4.0, < 2.0.0)
 
 PLATFORMS
   x86_64-linux-gnu
@@ -22,6 +48,8 @@ DEPENDENCIES
   httparty
   json
   nokogiri
+  rspec
+  webmock
 
 BUNDLED WITH
    2.6.7
